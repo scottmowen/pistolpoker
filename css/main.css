@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url('../img/felt-small.jpg');
+}
+
+canvas {
+    border: 1px solid #9C9898;
+
+}
+
+#shootArea {
+    cursor: url('../img/crosshair.png'), auto;
+}
+
+#container {
+    position: absolute;
+    top: 50px;
+    left: 84px;
+}
+
+#start {
+    position: absolute;
+    left: 1130px;
+    top: 650px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#titleImage {
+    position: absolute;
+    width: 450px;
+    left: 94px;
+}
+
+#scoreguideImage {
+    position: absolute;
+    top: 610px;
+    left: 85px;
+}
+
+#prevHands {
+    position: absolute;
+    top: 180px;
+    left: 1004px;
+    width: 350px;
+    height: 417px;
+    border: 2px solid #D98819;
+    overflow: auto;
+}
+
+.handSpan {
+
+    margin: 10px 5px;
+    padding: 2px 0px 2px 2px;
+}
+
+.prevScoreDiv {
+    color: black;
+    font-size: 24pt;
+    font-family: Calibri;
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 7px;
+}
+
+#roundScoreDiv {
+    position: absolute;
+    left: 1004px;
+    top: 100px;
+    width: 350px;
+    height: 45px;
+    color: black;
+    font-size: 30pt;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#timerDiv {
+    position: absolute;
+    left: 1004px;
+    top: 50px;
+    width: 350px;
+    height: 40px;
+    color: black;
+    font-size: 28pt;
+    text-align: center;
+    border: 1px solid black;
+}
