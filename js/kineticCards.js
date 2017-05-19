@@ -132,7 +132,7 @@ function initStage(images) {
 
 function generateSources() {
     for (var i = 0; i < suits.length; i++) {
-        for (var j = 1; j <= 13; j++) {
+        for (var j = 2; j <= 14; j++) {
             sources[suits[i] + j] = suits[i] + j + '.png';
         }
     }
@@ -209,7 +209,7 @@ function deal(images, dealerLayer, handLayer, stage) {
         var plusOrMinus = Math.random() < 0.5 ? -1 : 1;
 
         var suitIndex = Math.floor((Math.random() * 4));
-        var faceValue = Math.floor((Math.random() * 13) + 1);
+        var faceValue = Math.floor((Math.random() * 14) + 2);
 
         if ($.inArray(suits[suitIndex] + faceValue, cardsDealt) == -1 && $.inArray(suits[suitIndex] + faceValue, playerHand) == -1) {
 
@@ -418,7 +418,7 @@ function scoreHand() {
         //5 unique cards: Straight flush, straight, flush, or high card
         case 5:
             // Straight
-            if (playerCards[4].value - playerCards[0].value == 4 || playerCards[4].value - playerCards[0].value == 12)
+            if (playerCards[4].value - playerCards[0].value === 4)
             {
                 // Straight Flush
                 if (isFlush)
